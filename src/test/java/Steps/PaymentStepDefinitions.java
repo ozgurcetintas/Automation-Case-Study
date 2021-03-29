@@ -43,7 +43,7 @@ public class PaymentStepDefinitions {
     public void successfulPayment() throws Exception {
         PaymentPage paymentPage = new PaymentPage(driver, wait);
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        String cardNumber = propertiesReader.getValue("failedCardNumber");
+        String cardNumber = propertiesReader.getValue("cardNumber");
 
 
         if (paymentPage.isDisplayed()) {

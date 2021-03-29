@@ -24,7 +24,7 @@ public class AppiumStepDefinitions {
     public void successfulPayment() throws Exception {
         PaymentPage paymentPage = new PaymentPage(appiumDriver, wait);
         JavascriptExecutor js = (JavascriptExecutor) appiumDriver;
-        String cardNumber = propertiesReader.getValue("failedCardNumber");
+        String cardNumber = propertiesReader.getValue("cardNumber");
 
 
         if (paymentPage.isDisplayed()) {
